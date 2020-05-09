@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multimarkers Sylvotherapie</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">	
+	<script src="js/aframe-0.8.min.js"></script>
+	<script src="js/aframe-ar.min.js"></script>
+</head>
+
+<body style="margin:0;overflow:hidden;">
+
+	<a-scene embedded arjs="sourceType:webcam;detectionMode:mono;"> 
+         <a-assets> 
+
+             <a-asset-item id="bush-obj" src="models/bushaustralien.obj"></a-asset-item>
+              <a-asset-item id="bush-mtl" src="models/bushaustralien.mtl"></a-asset-item>
+              <a-asset-item id="bush-son" src=""></a-asset-item>
+
+
+              <a-asset-item id="savane-obj" src="models/savane.obj"></a-asset-item>
+              <a-asset-item id="savane-mtl" src="models/savane.mtl"></a-asset-item>
+
+              <a-asset-item id="taiga-obj" src="models/taiga.obj"></a-asset-item>
+              <a-asset-item id="taiga-mtl" src="models/taiga.mtl"></a-asset-item>
+
+              <a-asset-item id="temperee-obj" src="models/temperee.obj"></a-asset-item>
+              <a-asset-item id="temperee-mtl" src="models/temperee.mtl"></a-asset-item>
+
+              <a-asset-item id="toundra-obj" src="models/toundra.obj"></a-asset-item>
+              <a-asset-item id="toundra-mtl" src="models/toundra.mtl"></a-asset-item>
+
+              <a-asset-item id="tropicale-obj" src="models/tropicale.obj"></a-asset-item>
+              <a-asset-item id="tropicale-mtl" src="models/tropicale.mtl"></a-asset-item>
+
+          </a-assets> 
+
+
+           <a-marker type="pattern" url="data/01.patt">
+              <a-obj-model src="#bush-obj" scale="5 5 5" position= "-3 0 -3" material="color: #ffffff; emissive : #202020; emissiveIntensity: 1; roughness: 0.7; metalness: 0.3"></a-obj-model> 
+               </a-marker>
+
+              <a-marker type="pattern" url="data/02.patt">
+           <a-obj-model src="#savane-obj" scale="5 5 5" position= "-3 0 -3" material="color: #101010; emissive : #101010; emissiveIntensity: 0.9; roughness: 0.5; metalness: 0.7"></a-obj-model> 
+              </a-marker>
+
+              <a-marker type="pattern" url="data/03.patt">
+           <a-obj-model src="#taiga-obj" scale="5 5 5" position= "-3 0 -3" material="color: #ffffff; emissive : #202020; emissiveIntensity: 1; roughness: 0.7; metalness: 0.3"></a-obj-model> 
+              </a-marker>
+
+              <a-marker type="pattern" url="data/04.patt"> 
+              <a-obj-model src="#temperee-obj" scale="5 5 5" position= "-3 0 -3" material="color: #101010; emissive : #101010; emissiveIntensity: 0.9; roughness: 0.5; metalness: 0.7"></a-obj-model>
+               </a-marker>
+
+              <a-marker type="pattern" url="data/05.patt">
+           <a-obj-model src="#toundra-obj" scale="5 5 5" position= "-3 0 -3" material="color: #ffffff; emissive : #202020; emissiveIntensity: 1; roughness: 0.7; metalness: 0.3"></a-obj-model> 
+              </a-marker>
+
+              <a-marker type="pattern" url="data/06.patt">
+           <a-obj-model src="#tropicale-obj" scale="5 5 5" position= "-3 0 -3" material="color: #101010; emissive : #101010; emissiveIntensity: 0.9; roughness: 0.5; metalness: 0.7"></a-obj-model> 
+              </a-marker>
+
+
+		
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>
+</html>
